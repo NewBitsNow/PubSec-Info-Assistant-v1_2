@@ -1,5 +1,5 @@
 locals {
-  tags            = { "Agency" = "WaTech", "Billing Code" = "1630-0-1211-CC", "Business Group" = "Watech AID ECC", "Owner" = "Jason Niemi", "Service" = "AI-Sandbox", ProjectName = "Information Assistant", BuildNumber = var.buildNumber }
+  tags            = { ProjectName = "Information Assistant", BuildNumber = var.buildNumber }
   azure_roles     = jsondecode(file("${path.module}/azure_roles.json"))
   selected_roles  = ["CognitiveServicesOpenAIUser", 
                       "CognitiveServicesUser", 
